@@ -18,7 +18,7 @@ pdfWriter = PyPDF2.PdfFileWriter()
 for pageNum in range(pdfReader.numPages):
     pdfWriter.addPage(pdfReader.getPage(pageNum))
 
-pdfWriter.encrypt('i love python')
+pdfWriter.encrypt('i love python')  # 先加密，后写入？？？
 resultPdf = open('encryptedminutes.pdf', 'wb')
 pdfWriter.write(resultPdf)
 
