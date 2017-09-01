@@ -10,7 +10,7 @@ import sys
 __author__ = 'iProX'
 
 
-# 定义MyLog类
+# 定义MyLogging类
 class MyLogging(object):
     """此类用于创建一个自用的log"""
     def __init__(self):
