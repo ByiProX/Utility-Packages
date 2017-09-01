@@ -10,9 +10,18 @@ import sys
 __author__ = 'iProX'
 
 
-# 定义MyLogging类
+# 定义MyLog类
 class MyLogging(object):
-    """此类用于创建一个自用的log"""
+    """
+    此类用于创建一个自用的log
+    默认的logging模块有6个级别。分别为：
+    NOTSET    = 0
+    DEBUG     = 10
+    INFO      = 20
+    WARNING   = 30
+    ERROR     = 40
+    CRITICAL  = 50
+    """
     def __init__(self):
         user = getpass.getuser()
         # 第一步 创建一个logger
