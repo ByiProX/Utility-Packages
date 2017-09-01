@@ -29,7 +29,7 @@ class MyLogging(object):
         ch.setLevel(logging.WARNING)  # 只有错误才被记录到console中
 
         # 第四步 定义handler的输出格式
-        formatter = logging.Formatter('%(asctime)-12 %(levelname)-8s %(name)-10s %(message)-12s')
+        formatter = logging.Formatter('%(asctime)-12s %(levelname)-8s %(name)-10s %(message)-12s')
         fh.setFormatter(formatter)
         ch.setFormatter(formatter)
 
